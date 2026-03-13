@@ -153,6 +153,7 @@ Tools
 
 ## Project workflow
 
+```
 Dataset Input
    ↓
 Data Cleaning & Preprocessing
@@ -166,6 +167,7 @@ Customer Segmentation & Hypothesis Testing
 Power BI Dashboard Development
    ↓
 Final Insights & Business Report
+```
 
 ## Core Features
 
