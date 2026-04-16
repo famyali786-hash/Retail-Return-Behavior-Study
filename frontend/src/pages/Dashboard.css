@@ -1,0 +1,42 @@
+/* React Select Styling for Month Filter */
+
+.react-select__control {
+    background-color: #1e2530 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 8px;
+    color: white !important;
+    min-height: 38px;
+}
+
+.react-select__menu {
+    background-color: #1e2530 !important;
+    border: 1px solid #30363d;
+}
+
+.react-select__option {
+    background-color: #1e2530;
+    color: white;
+    cursor: pointer;
+}
+
+.react-select__option--is-focused {
+    background-color: #2a3441;
+}
+
+.react-select__multi-value {
+    background-color: #4f8ef7;
+    border-radius: 5px;
+}
+
+.react-select__multi-value__label {
+    color: white;
+}
+
+.react-select__multi-value__remove {
+    color: white;
+    cursor: pointer;
+}
+
+.react-select__placeholder {
+    color: #8b949e;
+}
