@@ -1,5 +1,3 @@
-# Retail Return Behavior Study
-
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -11,292 +9,237 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-## Project Overview
+# 📊 Retail Return Behaviour Analysis Dashboard
 
-Retail Return Behavior Study is a Data Analytics project focused on understanding product return patterns in retail businesses.
+## 📁 Data Analytics + Full-Stack Dashboard Project
 
-Retail companies experience significant losses due to frequent product returns. However, the key drivers behind these returns such as product category, customer behavior, pricing patterns, and seasonal trends are often unclear.
+A full-stack data analytics dashboard that analyzes retail return behavior to uncover patterns, trends, and key insights. The project integrates a Flask backend, React frontend, and Power BI visualizations to deliver an interactive and user-friendly analytics experience.
 
-This project analyzes retail transactional data to uncover patterns, identify high-return products, segment customers, and generate actionable business insights.
+This project was developed as part of an On-the-Job Training (OJT) program to understand real-world data analysis, dashboard building, and full-stack integration.
 
-The ultimate goal is to help retailers:
+## 🚀 Features
+1. KPI Dashboard
 
-1. Reduce unnecessary product returns
+Displays key business metrics:
 
-2. Improve inventory planning
+📦 Total Orders
 
-3. Optimize return policies
+🔁 Total Returns
 
-4. Enhance operational efficiency
+📉 Return Rate (%)
 
-## Table of Contents
+💰 Revenue Impact
 
-- Project Overview
-- Project Information
-- Problem Statement
-- Why This Project Matters
-- Dataset Information
-- Sample Visualizations
-- Tech Stack
-- Project Workflow
-- Core Features
-- Key Analytical Methods
-- Expected Outputs
-- Validation & Testing
-- Repository Structure
-- How to Run the Project
-- Success Criteria
-- Dashboard Preview
-- Future Improvements
-- Author
-- License
-  
-## Project Information
+These KPIs update dynamically based on filters.
 
-### Project Contributors
+2. Interactive Filters
 
-- Vaishnavi  
-- Md. Farhan Prawez
+Users can filter data based on:
 
-Roll Numbers: 25100010700039, 251810700049
+🌍 Country
 
-Year & Section: 2025 & Sem 2A
+📅 Year
 
-Project Type: Data Analytics
+🗓️ Month
 
-Mentor: Mr. Navneet Sir
+This enables focused analysis and better decision-making.
 
-Duration: 9 Weeks
+3. Power BI Integration
 
-## Problem Statement
+Embedded Power BI dashboard for advanced visual insights:
 
-Retail businesses face substantial revenue loss due to product returns. Without proper analysis, it is difficult to determine:
+📊 Sales vs Returns Trends
 
-1. Which products are returned most frequently
+📦 Category-wise Return Analysis
 
-2. Which customers contribute heavily to returns
+🌎 Region-wise Performance
 
-3. Whether returns are seasonal or time-dependent
+Provides rich, interactive visualizations inside the app.
 
-4. How pricing and quantity influence return rates
+4. Dynamic Charts (Frontend)
 
-This project aims to analyze retail transaction data to:
+Custom charts built using React:
 
-1. Identify return patterns
+📈 Monthly Return Trends
 
-2. Detect high-return products and categories
+📊 Category Distribution
 
-3. Segment customers based on return behavior
+📉 Return Percentage Analysis
 
-4. Provide data-driven recommendations
+5. Flask Backend API
 
-## Why This Project Matters
+Handles all data processing and API endpoints:
 
-Product returns directly impact:
+/meta → Filter values (Country, Year, Month)
 
-1. Revenue and profit margins
+/dashboard-data → KPI + chart data
 
-2. Inventory management efficiency
+Ensures smooth communication between frontend and dataset.
 
-3. Logistics and operational costs
+6. Clean UI with Loading States
 
-4. Customer satisfaction
+✔ Responsive design
 
-By understanding return behavior, retailers can improve forecasting accuracy, refine return policies, and make data-backed strategic decisions.
+⏳ Loading spinner for better UX
 
-Primary Beneficiaries:
-Retail companies, operations teams, business analysts, and decision-makers.
+🎯 Modular components (KPI cards, charts, modal)
 
-## Dataset Information
+## 📸 Screenshots
 
-Dataset Source: Online Retail Transaction Dataset (E-commerce retail transactions dataset commonly used for analytics practice).
+Dashboard Overview
 
-The dataset contains retail transaction records including:
+(Add screenshot here)
 
-- InvoiceNo – Unique transaction ID
-- StockCode – Product code
-- Description – Product description
-- Quantity – Number of items purchased
-- InvoiceDate – Transaction timestamp
-- UnitPrice – Price per product
-- CustomerID – Unique customer identifier
-- Country – Customer country
+Power BI Modal
 
-## Sample Visualizations
+![Power BI](frontend/src/assets/powerbi.png)
 
-The project generates multiple analytical charts including:
+KPI Cards
 
-- Monthly sales trends
-- Top selling products
-- Product return distribution
-- Customer purchase behavior
+(Add screenshot here)
 
-(Screenshots will be added here)
-
-## Tech Stack
-
-Programming & Analysis
-- Python
-- Pandas
-- NumPy
-- SciPy
-
-Visualization
-- Matplotlib
-- Seaborn
-- Power BI
-
-Tools
-- Jupyter Notebook
-- Git
-- GitHub
-
-## Project workflow
+## 🗂️ Project Structure
 
 ```
-Dataset Input
-   ↓
-Data Cleaning & Preprocessing
-   ↓
-Exploratory Data Analysis (EDA)
-   ↓
-Return Pattern Analysis
-   ↓
-Customer Segmentation & Hypothesis Testing
-   ↓
-Power BI Dashboard Development
-   ↓
-Final Insights & Business Report
-```
 
-## Core Features
-
-1. Return pattern analysis across products, customers, and time
-
-2. Identification of high-return products and categories
-
-3. Customer segmentation based on return behavior
-
-4. Interactive Power BI dashboard with KPIs and filters
-
-5. Business insight generation from statistical analysis
-
-## Stretch Goals
-
-1. Hypothesis testing (t-test, chi-square test)
-
-2. Cohort analysis for repeat return behavior
-
-3. Advanced statistical insights
-
-4. Business recommendation modeling
-
-## Key Analytical Methods
-
-1. Pandas DataFrame operations
-
-2. GroupBy aggregations
-
-3. Time-series trend analysis
-
-4. Distribution analysis
-
-5. Statistical hypothesis testing
-
-6. Data validation and consistency checks
-
-## Expected Outputs
-
-1. Cleaned and structured dataset
-
-2. Visualizations and return pattern charts
-
-3. Identification of high-return categories
-
-4. Segmented customer behavior insights
-
-5. Interactive Power BI dashboard
-
-6. Final analytical report and presentation
-
-## Validation & Testing
-
-To ensure correctness and reliability:
-
-1. Data validation checks for missing values and duplicates
-
-2. Clear identification of return indicators
-
-3. Cross-verification between Jupyter notebooks and dashboard KPIs
-
-4. Statistical significance testing
-
-5. Reproducible analysis workflow
-
-## Repository Structure
-```
-Retail-Return-Behavior-Study/
+RETAIL-RETURN-BEHAVIOR-ANALYSIS/
 │
-├── clean_retail_dataset_zip_file.zip                # cleaned datasets
-├── notebooks/                                       # Jupyter notebooks for analysis
-├── dashboard/                                       # Power BI dashboard files
-├── images/                                          # Visualizations & dashboard screenshots
+├── backend/
+│   ├── app.py              # Flask backend
+│   ├── model.pkl
+|   ├── requirements.txt
+|   ├── train_model.py
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── KpiCards.jsx
+│   │   │   └── LoadingSpinner.jsx
+            └── PowerBIModal.css
+│   │   │   └── PowerBIModal.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   └── Dashboard.jsx
+            └── Dashboard.css
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   ├── index.html
+│   └── package.json
+│
 ├── README.md
 └── requirements.txt
 ```
 
-## How to Run the Project
+## 🛠️ Tech Stack
 
-1. Clone the repository
+### Backend
 
-git clone https://github.com/Vaishnavi10706/Retail-Return-Behavior-Study
+Python
 
-2. Install required libraries
+Flask
 
+Pandas
+
+### Frontend
+
+React.js
+
+CSS
+
+### Data Visualization
+
+Power BI
+
+## ▶️ How to Run the Project
+
+1. Clone the Repository
+```
+git clone https://github.com/Vaishnavi10706/Retail-Return-Behavior-Study.git
+cd retail-return-behavior-analysis
+```
+2. Setup Backend
+```
+cd backend
 pip install -r requirements.txt
+python app.py
+```
+3. Setup Frontend
+```
+cd frontend
+npm install
+npm run dev
+```
+## 🧭 How to Use
 
-3. Launch Jupyter Notebook
+Step 1: Open Dashboard
+Run frontend and open in browser
 
-jupyter notebook
+Step 2: Apply Filters
 
-4. Run the notebooks step-by-step to reproduce the analysis.
+Select:
 
-5. Open the Power BI dashboard to explore interactive insights.
+Country
 
-## Success Criteria
+Year
 
-The project will be considered successful if:
+Month
 
-1. All core analytical features are implemented
+Step 3: Analyze KPIs
 
-2. Clear and data-backed insights are generated
+View updated:
 
-3. The Power BI dashboard is fully functional and interactive
+Total Orders
 
-4. The analysis is reproducible
+Returns
 
-5. Documentation is complete and professional
+Return Rate
 
-## Dashboard Preview
+Step 4: Explore Visuals
 
-(Screenshots of the Power BI dashboard will be added here.)
+View charts
 
-## Future Improvements
+Open Power BI modal for deeper insights
 
-1. Build a machine learning model to predict return probability
+## 📌 Example Insights
 
-2. Automate dashboard refresh with real-time data
+✔ High return rate in specific categories
 
-3. Deploy the analytics pipeline as a web-based application
+✔ Seasonal trends in returns
 
-4. Integrate predictive analytics for proactive decision-making
+✔ Country-wise return differences
 
-## License
+✔ Revenue loss due to returns
 
-This project is developed for academic purposes as part of On-the-Job Training (OJT).
+## 🎯 Purpose of the Project
 
-## Author
+This project helps in understanding:
 
-Vaishnavi  
+1. Real-world retail analytics
+2. Return behavior patterns
+3. Full-stack dashboard development
+4. API integration between React & Flask
+5. Embedding Power BI in applications
+6. Data-driven decision making
+
+## 🌱 Future Improvements
+
+- User authentication  
+- Export reports (PDF/CSV)  
+- Advanced filters  
+- Real-time data updates  
+- Machine learning for return prediction  
+
+## ⭐ Support
+
+If you found this project useful, consider starring ⭐ the repository!
+
+## 👩‍💻 Author
+
+**Vaishnavi**  
 B.Tech Student – Data Analytics  
-GitHub: https://github.com/Vaishnavi10706
+
+🔗 GitHub: https://github.com/Vaishnavi10706
