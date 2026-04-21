@@ -9,26 +9,26 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-# 📊 Retail Return Behaviour Analysis Dashboard
+# Retail Return Behaviour Analysis Dashboard
 
-## 📁 Data Analytics + Full-Stack Dashboard Project
+## Data Analytics + Full-Stack Dashboard Project
 
 A full-stack data analytics dashboard that analyzes retail return behavior to uncover patterns, trends, and key insights. The project integrates a Flask backend, React frontend, and Power BI visualizations to deliver an interactive and user-friendly analytics experience.
 
 This project was developed as part of an On-the-Job Training (OJT) program to understand real-world data analysis, dashboard building, and full-stack integration.
 
-## 🚀 Features
+## Features
 1. KPI Dashboard
 
 Displays key business metrics:
 
-📦 Total Orders
+Total Orders
 
-🔁 Total Returns
+Total Returns
 
-📉 Return Rate (%)
+Return Rate (%)
 
-💰 Revenue Impact
+Revenue Impact
 
 These KPIs update dynamically based on filters.
 
@@ -36,11 +36,11 @@ These KPIs update dynamically based on filters.
 
 Users can filter data based on:
 
-🌍 Country
+Country
 
-📅 Year
+Year
 
-🗓️ Month
+Month
 
 This enables focused analysis and better decision-making.
 
@@ -48,11 +48,11 @@ This enables focused analysis and better decision-making.
 
 Embedded Power BI dashboard for advanced visual insights:
 
-📊 Sales vs Returns Trends
+Sales vs Returns Trends
 
-📦 Category-wise Return Analysis
+Category-wise Return Analysis
 
-🌎 Region-wise Performance
+Region-wise Performance
 
 Provides rich, interactive visualizations inside the app.
 
@@ -60,11 +60,11 @@ Provides rich, interactive visualizations inside the app.
 
 Custom charts built using React:
 
-📈 Monthly Return Trends
+Monthly Return Trends
 
-📊 Category Distribution
+Category Distribution
 
-📉 Return Percentage Analysis
+Return Percentage Analysis
 
 5. Flask Backend API
 
@@ -78,13 +78,13 @@ Ensures smooth communication between frontend and dataset.
 
 6. Clean UI with Loading States
 
-✔ Responsive design
+Responsive design
 
-⏳ Loading spinner for better UX
+Loading spinner for better UX
 
-🎯 Modular components (KPI cards, charts, modal)
+Modular components (KPI cards, charts, modal)
 
-## 📸 Screenshots
+## Screenshots
 
 Dashboard Overview
 
@@ -98,7 +98,7 @@ KPI Cards
 
 (Add screenshot here)
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 
@@ -134,7 +134,7 @@ RETAIL-RETURN-BEHAVIOR-ANALYSIS/
 └── requirements.txt
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 
@@ -154,7 +154,7 @@ CSS
 
 Power BI
 
-## ▶️ How to Run the Project
+## How to Run the Project
 
 1. Clone the Repository
 ```
@@ -173,7 +173,7 @@ cd frontend
 npm install
 npm run dev
 ```
-## 🧭 How to Use
+## How to Use
 
 Step 1: Open Dashboard
 Run frontend and open in browser
@@ -204,17 +204,17 @@ View charts
 
 Open Power BI modal for deeper insights
 
-## 📌 Example Insights
+## Example Insights
 
-✔ High return rate in specific categories
+High return rate in specific categories
 
-✔ Seasonal trends in returns
+Seasonal trends in returns
 
-✔ Country-wise return differences
+Country-wise return differences
 
-✔ Revenue loss due to returns
+Revenue loss due to returns
 
-## 🎯 Purpose of the Project
+## Purpose of the Project
 
 This project helps in understanding:
 
@@ -225,7 +225,7 @@ This project helps in understanding:
 5. Embedding Power BI in applications
 6. Data-driven decision making
 
-## 🌱 Future Improvements
+## Future Improvements
 
 - User authentication  
 - Export reports (PDF/CSV)  
@@ -233,13 +233,13 @@ This project helps in understanding:
 - Real-time data updates  
 - Machine learning for return prediction  
 
-## ⭐ Support
+## Support
 
 If you found this project useful, consider starring ⭐ the repository!
 
-## 👩‍💻 Author
+## Author
 
 **Vaishnavi**  
 B.Tech Student – Data Analytics  
 
-🔗 GitHub: https://github.com/Vaishnavi10706
+GitHub: https://github.com/Vaishnavi10706
