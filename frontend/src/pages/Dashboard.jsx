@@ -77,7 +77,7 @@ export default function Dashboard() {
       <div className="page-header">
         <div className="page-header-row">
           <div>
-            <h1>📊 Dashboard</h1>
+            <h1>📊 Retail Return Behaviour Dashboard</h1>
             <p>Retail Return Behaviour Overview With Dynamic Filtering</p>
           </div>
           <button
