@@ -240,7 +240,7 @@ export default function Dashboard() {
 
             <div className="chart-card">
               <h3>🥧 Return vs Non-Return</h3>
-              <ResponsiveContainer width="100%" height={280}>
+              <ResponsiveContainer width="100%" height={260}>
                 <PieChart>
                   <Pie
                     data={data.returnPie}
@@ -250,10 +250,8 @@ export default function Dashboard() {
                     outerRadius={110}
                     paddingAngle={3}
                     dataKey="value"
-                    label={({ name, percent }) =>
-                      `${name}: ${(percent * 100).toFixed(1)}%`
-                    }
-                    labelLine={{ stroke: "#484f58" }}
+                    label={false}
+                    labelLine={false}
                   >
                     {data.returnPie.map((_, i) => (
                       <Cell key={i} fill={PIE_COLORS[i % PIE_COLORS.length]} />
@@ -265,6 +263,17 @@ export default function Dashboard() {
                   />
                 </PieChart>
               </ResponsiveContainer>
+              <div style={{ display: "flex", justifyContent: "center", gap: "24px", marginTop: "8px" }}>
+                {data.returnPie.map((entry, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: 13, color: "#c9d1d9" }}>
+                    <span style={{ width: 12, height: 12, borderRadius: "50%", background: PIE_COLORS[i % PIE_COLORS.length], display: "inline-block" }} />
+                    <span>{entry.name}</span>
+                    <span style={{ color: PIE_COLORS[i % PIE_COLORS.length], fontWeight: 600 }}>
+                      {((entry.value / data.returnPie.reduce((s, e) => s + e.value, 0)) * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
