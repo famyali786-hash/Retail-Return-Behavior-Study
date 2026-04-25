@@ -5,7 +5,7 @@ from flask_cors import CORS
 import pandas as pd
 
 app = Flask(__name__)
-CORS(app)  
+CORS(app, origins=["http://localhost:5173", "http://localhost:4173", "https://*.vercel.app"], supports_credentials=True)
 
 BASE_DIR = os.path.dirname(__file__)
 
