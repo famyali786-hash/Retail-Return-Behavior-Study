@@ -1,5 +1,5 @@
 // Use environment variable or fallback to production URL
-const BASE_URL = import.meta.env.VITE_API_URL || "https://retail-return-behavior-study.onrender.com";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://retail-return-behavior-study-production.up.railway.app";
 
 export async function fetchMeta() {
   try {
