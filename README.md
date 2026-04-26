@@ -88,7 +88,9 @@ Modular components (KPI cards, charts, modal)
 
 Dashboard Overview
 
-(Add screenshot here)
+![Dashboard](frontend/src/assets/Dashboard1.png)
+![Dashboard](frontend/src/assets/Dashboard2.png)
+![Dashboard](frontend/src/assets/Dashboard3.png)
 
 Power BI Modal
 
@@ -96,7 +98,7 @@ Power BI Modal
 
 KPI Cards
 
-(Add screenshot here)
+![Dashboard](frontend/src/assets/Dashboard1.png)
 
 ## Project Structure
 
