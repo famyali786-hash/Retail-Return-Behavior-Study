@@ -1,0 +1,52 @@
+.pbi-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.pbi-modal {
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pbi-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f2937;
+    color: white;
+    padding: 12px 20px;
+}
+
+.pbi-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pbi-modal-body {
+    padding: 15px;
+}
+
+.pbi-screenshot {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.pbi-description {
+    padding: 15px;
+    font-size: 14px;
+}
